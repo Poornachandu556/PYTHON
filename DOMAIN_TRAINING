@@ -1,0 +1,72 @@
+'''a = ["DINESH","CHARAN","POORNA","BHANU","jack"]
+b = [58,88,86,67,90]
+arrear = [0,1,2,0,0]
+#m = [[45,67,88,65],[67,89,45,34],[78,90,56,43],[90,80,70,60]]
+#for i in range(len(a)):
+#    t = sum(m[i])
+#    p = (t / 400) * 100
+#   print(f"{i+1}.{a[i]} : {int(p)}%")
+for i in range(len(a)):
+    if arrear[i] == 0 and b[i] >= 60:
+        print(a[i])
+'''
+'''import random
+l = []
+while len(l)<5:
+    r = random.randint(1,10)
+    if r not in l:
+        l.append(r)
+print(l)
+'''
+for i in range(1, 11):
+    for j in range(1, 11):
+        print((i * j) ,end = " ")
+    print()  
+a = ["DINESH","CHARAN","POORNA","BHANU"]
+m = [[45,67,88,65],[67,89,45,34],[78,90,56,43],[90,80,70,60]]
+per=[]
+for i in m:
+    t = sum(i)//4
+    per.append(t)
+for i in range(4):
+    print("{}. {} : {}%".format(i+1,a[i],per[i]))
+'''
+a = [[" " for i in range(10)]for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        if (j==0 or j==9):
+            a[i][j]="*"
+        elif i==j and i<5:
+            a[i][j]="*"
+        elif i+j==8 and i<5:
+            a[i][j]="*"
+for i in range(10):
+    for j in range(10):
+        print(a[i][j],end = " ")
+    print()
+'''
+a = input("b:")
+b = input("g:")
+a1 = list(a)
+b1 = list(b)
+for i in range(len(a1)):
+    for j in range(len(b1)):
+        if(a1[i]==b1[j]):
+            a1[i]='*'
+            b1[j]='*'
+print(a1)
+print(b1)
+z = 0
+for i in range(len(a1)):
+    if(a1[i]!="*"):
+        z +=1
+for i in range(len(b1)):
+    if(b1[i]!="*"):
+        z +=1
+print(z)
+f=0
+res = list("FLAMES")
+for i in range(5):
+    f = (f+(z-1))%len(res)
+    res.pop(f)
+print(res)

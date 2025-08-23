@@ -1,3 +1,4 @@
+#sum of marks displaying names whos cgpa is > 60 and has 0 arrear
 '''a = ["DINESH","CHARAN","POORNA","BHANU","jack"]
 b = [58,88,86,67,90]
 arrear = [0,1,2,0,0]
@@ -10,6 +11,7 @@ for i in range(len(a)):
     if arrear[i] == 0 and b[i] >= 60:
         print(a[i])
 '''
+#generating random numbers
 '''import random
 l = []
 while len(l)<5:
@@ -18,10 +20,12 @@ while len(l)<5:
         l.append(r)
 print(l)
 '''
+#table format
 for i in range(1, 11):
     for j in range(1, 11):
         print((i * j) ,end = " ")
     print()  
+#another logic of displaying names whos cgpa is > 60 and has 0 arrear
 a = ["DINESH","CHARAN","POORNA","BHANU"]
 m = [[45,67,88,65],[67,89,45,34],[78,90,56,43],[90,80,70,60]]
 per=[]
@@ -31,6 +35,7 @@ for i in m:
 for i in range(4):
     print("{}. {} : {}%".format(i+1,a[i],per[i]))
 '''
+#grid methodology pattern
 a = [[" " for i in range(10)]for i in range(10)]
 for i in range(10):
     for j in range(10):
@@ -45,6 +50,7 @@ for i in range(10):
         print(a[i][j],end = " ")
     print()
 '''
+# flames problem
 a = input("b:")
 b = input("g:")
 a1 = list(a)

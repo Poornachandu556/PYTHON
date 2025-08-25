@@ -1,0 +1,26 @@
+'''
+from datetime import datetime
+a = input("enter birthday date in(YYYY-MM-DD)")
+b = input("enter todays date in (YYYY-MM-DD)")
+a1 = datetime.strptime(a,"%Y-%m-%d")
+b1 = datetime.strptime(b,"%Y-%m-%d")
+print("No of days lived",b1-a1)
+'''
+'''
+# MATCHES SHEDULE
+import random
+n = int(input("Enter no of teams: "))
+teams = []
+for i in range(n):
+    t = input("Enter team name: ")
+    teams.append(t)
+m = int(input("Enter no of meetups: "))
+matches = []
+for i in range(n-1):
+    for j in range(i+1,n):
+        for k in range(m):
+            matches.append([teams[i],teams[j]])
+random.shuffle(matches)
+for i in range(len(matches)):
+    print("Match {} : {} vs {}".format(i+1,matches[i][0],matches[i][1]))
+'''
